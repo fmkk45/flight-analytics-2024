@@ -1,0 +1,41 @@
+-- ============================================================
+-- Flight Analytics 2024 - Tabellenstruktur
+-- ============================================================
+
+CREATE TABLE flight_data_2024 (
+    year INT,
+    month INT,
+    day_of_month INT,
+    day_of_week INT,
+    fl_date DATE,
+    op_unique_carrier NVARCHAR(10),
+    op_carrier_fl_num INT,
+    origin NVARCHAR(10),
+    origin_city_name NVARCHAR(100),
+    origin_state_nm NVARCHAR(50),
+    dest NVARCHAR(10),
+    dest_city_name NVARCHAR(100),
+    dest_state_nm NVARCHAR(50),
+    crs_dep_time INT,
+    dep_time FLOAT,
+    dep_delay FLOAT,
+    taxi_out FLOAT,
+    wheels_off FLOAT,
+    wheels_on FLOAT,
+    taxi_in FLOAT,
+    crs_arr_time INT,
+    arr_time FLOAT,
+    arr_delay FLOAT,
+    cancelled BIT,
+    cancellation_code NVARCHAR(50),
+    diverted BIT,
+    crs_elapsed_time FLOAT,
+    actual_elapsed_time FLOAT,
+    air_time FLOAT,
+    distance FLOAT,
+    carrier_delay INT,
+    weather_delay INT,
+    nas_delay INT,
+    security_delay INT,
+    late_aircraft_delay INT
+);
